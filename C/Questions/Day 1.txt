@@ -1,0 +1,103 @@
+What is the preprocessor directive?
+
+=>
+
+Which statements are started with # (Hash) symbol in C, Those statements are called preprocessor directive?
+
+	EX,
+	
+	#include<stdio.h>
+
+What do you mean by stdio.h?
+
+=>
+
+stdio.h stands for "Standard input-output", And the ".h" is an extension of the header file.
+
+Explain printf() and scanf() function in C?
+
+=>
+
+1) printf() is called output function.
+1) scanf() is called input function.
+
+	EX of printf(),
+	
+	printf("ABS academy"); [Only a string]
+	
+	printf("%d", _variable); [To print a variable's value]
+	
+	printf("Your data is %d", _variable); [To print a String and a variable simultaneously]
+	
+	EX,
+	
+	scanf("%d", &_variable); [To take input one number]
+	scanf("%d %d", &_variable, &_variable_2); [To take input two number number]
+	
+	And similarly, we can take multiple variable's values.
+	
+
+How a variable declared in C programming?
+
+=>
+
+	The generalized form to declare a variable in C is,
+	
+	(DATATYPE of the variable) (Name of the variable) (Semicolon)
+	
+	EX,
+	
+	int _variable_1;
+	char _variable_2;
+	double _variable_3;
+
+Explain diffrent types of DATATYPEs in C?
+
+=>
+
+In C DATATYPEs are categorized in two parts,
+
+									1) Predefind/Primitive DATATYPE
+									2) Derived/User-Defind datatypes
+									
+"In Predefined/Primitive" DATATYPE there are mainly 8 different kinds of data types are available in C
+
+1) int
+2) char
+3) float
+4) double
+5) long
+6) short
+7) Array
+8) Pointer
+
+"Derived/User-Defined" DATATYPE there are 3 kinds of datatypes we can create
+
+1) structure
+2) enum
+3) union
+
+WAP a C program to add two numbers?
+
+#include<stdio.h>
+
+int main()
+{
+
+	int _first_Number;
+	int _second_Number;
+	int _addition_Of_The_Two_Number;
+	
+	printf("Enter your first number");
+	scanf("%d", &_first_Number);
+	
+	printf("Enter your first number");
+	scanf("%d", &_second_Number);
+	
+	_addition_Of_The_Two_Number = _first_Number + _second_Number;
+	
+	printf("Sum of the two entered number is %d", _addition_Of_The_Two_Number);
+	
+	return 0;
+
+}
